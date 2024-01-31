@@ -12,8 +12,8 @@ def mi_opcion():
     menu = [
         inquirer.List(
             "opcion",
-            message="Selecciona la opcion que deseas explorar",
-            choices=opciones,
+            "Selecciona la opcion que deseas explorar",
+            opciones,
         )
     ]
 
