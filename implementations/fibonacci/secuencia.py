@@ -1,15 +1,14 @@
-import re
-import inquirer
+import inquirer, re
 
 def secuencia ():
-    question = [inquirer.Text(name="input", message="Cuantos numeros de la secuencia quieres ver")]
+    question = [inquirer.Text("input", "Cuantos numeros de la secuencia quieres ver")]
     input = inquirer.prompt(question)
 
     verificador = r"^[0-9]+$"
 
     while not (re.match(verificador, input["input"])):
         print()
-        question = [inquirer.Text(name="input", message="Informacion errada. Necesito un numero positivo para continuar")]
+        question = [inquirer.Text("input", "Informacion errada. Necesito un numero positivo para continuar")]
         input = inquirer.prompt(question)
 
     input = int(input["input"])
