@@ -15,6 +15,7 @@ class Persona:
         verificador = r"^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
 
         while not (re.match(verificador, nombre["nombre"])):
+            print()
             question = [inquirer.Text("nombre", "Informacion incorrecta. Dime tu nombre por favor")]
             nombre = inquirer.prompt(question)
         
@@ -28,6 +29,7 @@ class Persona:
         verificador = r"^[0-9]+$"
 
         while not (re.match(verificador, edad["edad"])):
+            print()
             question = [inquirer.Text("edad", "Informacion incorrecta. Dime tu edad por favor")]
             edad = inquirer.prompt(question)
         
