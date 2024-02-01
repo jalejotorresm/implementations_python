@@ -1,5 +1,6 @@
 from implementations.persona.data_persona import Persona
 
+
 def persona():
     print("--- Implementacion Structs y Metodos ---")
     print()

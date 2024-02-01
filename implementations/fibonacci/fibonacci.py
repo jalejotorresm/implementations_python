@@ -1,5 +1,6 @@
 from implementations.fibonacci.fib import fib
 
-def fibonacci ():
+
+def fibonacci():
     print("--- Calculo de Secuencia Fibonacci ---\n")
     fib()

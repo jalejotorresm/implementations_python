@@ -1,5 +1,6 @@
 from implementations.fibonacci.secuencia import secuencia
 
+
 def fib():
     numeros = secuencia()
 
@@ -7,7 +8,7 @@ def fib():
 
     for i in range(2, len(numeros)):
         numeros[i] = numeros[i - 2] + numeros[i - 1]
-    
+
     for i in range(len(numeros)):
         if i < (len(numeros) - 2):
             print(f"{numeros[i]}, ", end="")

@@ -1,5 +1,6 @@
 import inquirer
 
+
 def mi_opcion():
     opciones = [
         "Calculo de Secuencia de Fibonacci",

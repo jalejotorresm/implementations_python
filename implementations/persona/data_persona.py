@@ -1,14 +1,15 @@
 import inquirer, re
 
+
 class Persona:
-    def __init__ (self, nombre, edad):
+    def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
 
-    def saludar (self):
+    def saludar(self):
         print(f"Hola, eres {self.nombre} y tienes {self.edad} años de edad.\n")
 
-    def set_data (self):
+    def set_data(self):
         question = [inquirer.Text("nombre", "Dime tu nombre")]
         nombre = inquirer.prompt(question)
 
@@ -16,9 +17,13 @@ class Persona:
 
         while not (re.match(verificador, nombre["nombre"])):
             print()
-            question = [inquirer.Text("nombre", "Informacion incorrecta. Dime tu nombre por favor")]
+            question = [
+                inquirer.Text(
+                    "nombre", "Informacion incorrecta. Dime tu nombre por favor"
+                )
+            ]
             nombre = inquirer.prompt(question)
-        
+
         self.nombre = nombre["nombre"]
 
         print()
@@ -30,9 +35,11 @@ class Persona:
 
         while not (re.match(verificador, edad["edad"])):
             print()
-            question = [inquirer.Text("edad", "Informacion incorrecta. Dime tu edad por favor")]
+            question = [
+                inquirer.Text("edad", "Informacion incorrecta. Dime tu edad por favor")
+            ]
             edad = inquirer.prompt(question)
-        
+
         self.edad = int(edad["edad"])
 
         print()
