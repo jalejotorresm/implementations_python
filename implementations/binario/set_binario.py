@@ -18,4 +18,4 @@ def set_binario():
 
     binario = binario[::-1]
 
-    print(f"\nEl número {numero} convertido en binario es: " + binario + "\n")
+    print(f"\nEl número {numero} convertido en binario es: {binario}\n")
