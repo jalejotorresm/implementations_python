@@ -1,5 +1,6 @@
 from implementations.decimal.set_binario import set_binario
 
+
 def set_decimal():
     array = set_binario()
 
@@ -13,7 +14,7 @@ def set_decimal():
         if base[i] == "0":
             continue
 
-        pre_decimal = 2 ** i
+        pre_decimal = 2**i
 
         decimal += pre_decimal
 
