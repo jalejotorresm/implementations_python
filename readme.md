@@ -1,4 +1,4 @@
-# Coleccion de Programas con Python (Virtualenv)
+# Coleccion de Programas con Python (con Virtualenv)
 
 Este es un proyecto pequeño que construi hace unas semanas para practicar mis conocimientos en el lenguaje de programacion Python.
 
